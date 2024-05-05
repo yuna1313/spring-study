@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: elastic-search
+  thymeleaf:
+    prefix: classpath:templates/
+    suffix: .html
+    cache: false
+  data:
+    elasticsearch:
+      repositories:
+        enabled: true
+      url: localhost:9200
+logging:
+  level:
+    org.elasticsearch.client.RestClient: debug
+    tracer: trace
